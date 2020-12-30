@@ -249,6 +249,27 @@ img {
   border-radius: 0.5rem;
 }
 
+/*---Contact----*/
+.contact__input {
+  width: 100%;
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  /*border: 2xp solid var(--second-color);*/
+  outline: none;
+  margin-bottom: var(--mb-4);
+}
+.contact__button {
+  display: block;
+  border: none;
+  outline: none;
+  font-size: var(--normal-font-size);
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/*----media-----*/
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -293,7 +314,6 @@ img {
   .home__social {
     padding-top: 0;
     padding-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
     flex-direction: row;
     align-self: flex-end;
   }
@@ -313,5 +333,19 @@ img {
   }
   .about__img img {
     width: 300px;
+  }
+
+  .contact__form {
+    width: 360px;
+  }
+  .contact__container {
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
