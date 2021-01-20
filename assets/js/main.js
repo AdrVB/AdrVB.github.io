@@ -24,19 +24,21 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-const sr = ScrollReveal({
+/* const sr = ScrollReveal({
     origin: 'top',
     distance: '80px',
     duration: 2000,
     reset: true
 })
 
-sr.reveal('.home__title', {})
-sr.reveal('.button', { delay: 200 })
-sr.reveal('.home__social-icon', { delay: 400 })
+sr..reveal('.home_home__img', { delay: 100 })
+sr.reveal('.home__social-icon', { delay: 200 })
+sr.reveal('.home__title', { 300})
+sr.reveal('.button', { delay: 400 })
+
 
 sr.reveal('.about__img', {})
 sr.reveal('.about__subtitle', { delay: 200 })
 sr.reveal('.about__text', { delay: 400 })
 
-sr.reveal('.contact__input', { interval: 200 })
+sr.reveal('.contact__input', { interval: 200 }) */

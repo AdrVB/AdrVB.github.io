@@ -31,6 +31,7 @@
   --mb-4: 2rem;
   --mb-5: 2.5rem;
   --mb-6: 3rem;
+  --mb-7: 7rem;
 }
 
 :root {
@@ -160,6 +161,7 @@ img {
   background-color: var(--first-color);
 }
 .nav__log {
+  margin-left: var(--mb-3);
   color: var(--second-color);
 }
 .nav__toggle {
@@ -198,24 +200,30 @@ img {
 }
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
 }
 .home__social-icon {
   width: max-content;
-  margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  margin-right: var(--mb-2);
+  font-size: var(--mb-4);
   color: var(--second-color);
 }
 .home__social-icon:hover {
   color: var(--first-color);
 }
 
+.home__img {
+  margin-top: var(--mb-6);
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+
 .home__img img {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 295px;
-  border-radius: 0.5rem;
+  border-radius: 50%;
 }
 
 .button {
@@ -246,6 +254,7 @@ img {
 
 .about__img img {
   width: 200px;
+  border-radius: 50%;
   border-radius: 0.5rem;
 }
 
@@ -256,7 +265,6 @@ img {
   font-weight: var(--font-semi);
   padding: 1rem;
   border-radius: 0.5rem;
-  /*border: 2xp solid var(--second-color);*/
   outline: none;
   margin-bottom: var(--mb-4);
 }
@@ -310,20 +318,30 @@ img {
   }
   .home__data {
     align-self: flex-end;
+    margin-bottom: 3rem;
+    margin-left: var(--mb-4);
   }
   .home__social {
     padding-top: 0;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
     flex-direction: row;
     align-self: flex-end;
+    margin-left: auto;
+    margin-right: auto;
   }
   .home__social-icon {
     margin-bottom: 0;
     margin-right: var(--mb-4);
   }
   .home__img {
-    width: 700px;
-    bottom: 15%;
+    margin-top: var(--mb-7);
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+  }
+
+  .home__img img {
+    border-radius: 50%;
   }
 
   .about__container {
@@ -333,6 +351,7 @@ img {
   }
   .about__img img {
     width: 300px;
+    border-radius: 50%;
   }
 
   .contact__form {
